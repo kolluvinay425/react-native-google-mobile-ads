@@ -65,7 +65,7 @@
     ]
   },
   "scripts": {
-    "prepare": "yarn build && yarn build:plugin",
+    "prepare": "npm run build && npm run build:plugin",
     "build": "genversion --es6 --semi src/version.ts && bob build",
     "build:clean": "rimraf android/build && rimraf ios/build && rimraf lib && rimraf plugin/build",
     "build:plugin": "yarn tsc --build plugin",
