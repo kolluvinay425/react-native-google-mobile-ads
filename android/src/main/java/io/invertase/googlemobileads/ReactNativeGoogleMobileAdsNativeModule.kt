@@ -31,7 +31,7 @@ import com.google.android.gms.ads.VideoOptions
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdOptions
 
-@ReactModule(ReactNativeGoogleMobileAdsNativeModule.NAME)
+@ReactModule(name = "RNGoogleMobileAdsModule", needsEagerInit = true) 
 class ReactNativeGoogleMobileAdsNativeModule(
   reactContext: ReactApplicationContext
 ) : NativeGoogleMobileAdsNativeModuleSpec(reactContext) {
